@@ -101,7 +101,7 @@ input[disabled] {
   opacity: .5 ;
 }
 
-.display__memory::before {
+.memory::before {
   content: 'm';
   display: flex;
   font-size: 1rem;

@@ -69,7 +69,6 @@ document.querySelector('.button.white').addEventListener('click', () => {
 mrcButton.addEventListener('click', () => {
   if (memory !== null) {
     display.value = memory.toString();
-    memory = '';
   }
 });
 
@@ -80,5 +79,5 @@ mMinusButton.addEventListener('click', () => {
 
 mPlusButton.addEventListener('click', () => {
   memory = parseFloat(display.value);
-  displayMem.classList.add('memory')
+  displayMem.classList.add('memory');
 });
