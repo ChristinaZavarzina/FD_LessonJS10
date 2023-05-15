@@ -9,6 +9,7 @@
 
 'use strict'
 
+const displayMem = document.querySelector('.display__memory')
 const display = document.querySelector('.display');
 const buttons = document.querySelectorAll('.button');
 const mrcButton = document.querySelector('.button__mrc');
@@ -74,10 +75,10 @@ mrcButton.addEventListener('click', () => {
 
 mMinusButton.addEventListener('click', () => {
   memory = null;
-  display.textContent = '';
+  displayMem.classList.remove('memory');
 });
 
 mPlusButton.addEventListener('click', () => {
   memory = parseFloat(display.value);
-  display.textContent = 'm';
+  displayMem.classList.add('memory')
 });

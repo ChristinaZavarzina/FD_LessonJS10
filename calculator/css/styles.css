@@ -100,3 +100,12 @@ p {
 input[disabled] {
   opacity: .5 ;
 }
+
+.display__memory::before {
+  content: 'm';
+  display: flex;
+  font-size: 1rem;
+  padding: 12px 10px;
+  position: absolute;
+  z-index: 10;
+}
