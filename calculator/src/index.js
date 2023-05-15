@@ -20,7 +20,7 @@ const eqButton = document.getElementById('eq');
 let firstNum = '';
 let secondNum = '';
 let operator = '';
-let memory = null;
+let memory = 0;
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
@@ -67,17 +67,17 @@ document.querySelector('.button.white').addEventListener('click', () => {
 });
 
 mrcButton.addEventListener('click', () => {
-  if (memory !== null) {
+  if (memory !== 0) {
     display.value = memory.toString();
   }
 });
 
 mMinusButton.addEventListener('click', () => {
-  memory = null;
+  memory = 0;
   displayMem.classList.remove('memory');
 });
 
 mPlusButton.addEventListener('click', () => {
   memory = parseFloat(display.value);
-  displayMem.classList.add('memory');
+  displayMem.classList.add('memory')
 });
